@@ -11,5 +11,4 @@ public class NaiveSquareRoot {
     public static void main(String[] args) {
         System.out.println(sqroots(15));
     }
-    
 }
