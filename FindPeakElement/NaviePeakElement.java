@@ -26,7 +26,7 @@ public class NaviePeakElement {
         return 1;
     }
     public static void main(String[] args) {
-        int number[] = {};
+        int number[] = {5, 20, 40, 30, 20, 50, 60};
         System.out.println(PeakElement(number));
     }
     
