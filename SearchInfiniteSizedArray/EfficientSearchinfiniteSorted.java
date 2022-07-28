@@ -9,7 +9,7 @@ public class EfficientSearchinfiniteSorted {
             return -1;
         }
 
-            int mid = starting +(starting-ending) / 2;
+            int mid = starting + ending / 2;
 
             if(number[mid] == target){
                 return mid;

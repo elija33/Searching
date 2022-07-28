@@ -1,5 +1,7 @@
+package BinarySearchIterative;
+
 public class BSIterative{
-    public static int BS(int number[], int givernumber){
+    public static int BS(int number[], int target){
      // if the array is sorted, we need to find the mid element of the array.
         // - set the starting index of the array to something like (low), and the ending index of the array to something(hight).
         // Do a loop to compair if the low is equal to the hight
@@ -20,12 +22,12 @@ public class BSIterative{
             int mid = (low + high) / 2;
 
         // checking if the mid# is equal to giver# we return the mid#
-            if(number[mid] == givernumber) {
+            if(number[mid] == target) {
                 return mid;
             }
         
             // check if the giver# is less than mid# than we search the low side of the array
-           else if(givernumber < number[mid]){
+           else if(number[mid] > target){
                 high = mid - 1;
            }
 
@@ -39,9 +41,9 @@ public class BSIterative{
     public static void main(String[] args) {
 
         int number[] = {10, 20, 30, 40, 50, 60};
-        int givernumber = 50;
+        int target = 50;
         int giver = 5;
-        System.out.println(BS(number, givernumber));
+        System.out.println(BS(number, target));
         System.out.println();
         System.out.println(BS(number, giver));
         
